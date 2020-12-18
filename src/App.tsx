@@ -1,12 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
+import Layout from './components/Layout';
+
+const AppWrapper = styled.div`
+  width: 100%;
+  padding-top: 80px;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        App
-      </header>
-    </div>
+    <AppWrapper>
+      <Layout />
+    </AppWrapper>
   );
 }
 
