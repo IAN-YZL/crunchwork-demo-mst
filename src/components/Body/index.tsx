@@ -27,62 +27,59 @@ const CardCheckbox = styled(Checkbox)`
 	font-size: 10px;
 `;
 
-const Body = () => {
-
-	return (
-		<BodyLayout>
-			<Col span={18}>
-				<InfoCard title='Project Information'>
-					<CardBody>
-						<Row gutter={8}>
-							<Col span={12}>
-								<p>Sum Insured</p>
-								<Input />
-							</Col>
-							<Col span={12}>
-								<p>Incident Type</p>
-								<Input.Group style={{ width: '100%' }}>
-									<Select style={{ width: '100%', fontSize: '10px' }} defaultValue='Drury Lane'>
-										<Option value='Drury Lane'>
-											Drury Lane
-										</Option>
-										<Option value='Adelaide St'>
-											Adelaide St
-										</Option>
-										<Option value='Queen St'>
-											Queen St
-										</Option>
-									</Select>
-								</Input.Group>
-							</Col>
-						</Row>
-						<CardCheckbox>Flood coverage</CardCheckbox>
-					</CardBody>
-				</InfoCard>
-				<InfoCard title='Policy Information'>
-					<CardBody>
-						<Row gutter={8}>
-							<Col span={8}>
-								<p>Policy Number</p>
-								<Input />
-							</Col>
-							<Col span={8}>
-								<p>Policy period start</p>
-								<DatePicker style={{ width: '100%' }} />
-							</Col>
-							<Col span={8}>
-								<p>Policy period end</p>
-								<DatePicker style={{ width: '100%' }} />
-							</Col>
-						</Row>
-					</CardBody>
-				</InfoCard>
-				<InfoCard title='Contacts'>
-					<ContactCardBody />
-				</InfoCard>
-			</Col>
-		</BodyLayout>
-	);
-};
+const Body = (): JSX.Element => (
+	<BodyLayout>
+		<Col span={18}>
+			<InfoCard title='Project Information'>
+				<CardBody>
+					<Row gutter={8}>
+						<Col span={12}>
+							<p>Sum Insured</p>
+							<Input />
+						</Col>
+						<Col span={12}>
+							<p>Incident Type</p>
+							<Input.Group style={{ width: '100%' }}>
+								<Select style={{ width: '100%', fontSize: '10px' }} defaultValue='Drury Lane'>
+									<Option value='Drury Lane'>
+										Drury Lane
+									</Option>
+									<Option value='Adelaide St'>
+										Adelaide St
+									</Option>
+									<Option value='Queen St'>
+										Queen St
+									</Option>
+								</Select>
+							</Input.Group>
+						</Col>
+					</Row>
+					<CardCheckbox>Flood coverage</CardCheckbox>
+				</CardBody>
+			</InfoCard>
+			<InfoCard title='Policy Information'>
+				<CardBody>
+					<Row gutter={8}>
+						<Col span={8}>
+							<p>Policy Number</p>
+							<Input />
+						</Col>
+						<Col span={8}>
+							<p>Policy period start</p>
+							<DatePicker style={{ width: '100%' }} />
+						</Col>
+						<Col span={8}>
+							<p>Policy period end</p>
+							<DatePicker style={{ width: '100%' }} />
+						</Col>
+					</Row>
+				</CardBody>
+			</InfoCard>
+			<InfoCard title='Contacts'>
+				<ContactCardBody />
+			</InfoCard>
+		</Col>
+	</BodyLayout>
+);
 
 export default Body;

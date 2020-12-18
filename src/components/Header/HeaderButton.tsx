@@ -21,13 +21,10 @@ interface HeaderButtonProps {
 	style?: CSSProperties;
 }
 
-const HeaderButton = (props: HeaderButtonProps) => {
-
-	return (
-		<BtnLayout icon={props.icon} style={props.style}>
-			{props.text}
-		</BtnLayout>
-	);
-};
+const HeaderButton = (props: HeaderButtonProps): JSX.Element => (
+	<BtnLayout icon={props.icon} style={props.style}>
+		{props.text}
+	</BtnLayout>
+);
 
 export default HeaderButton;

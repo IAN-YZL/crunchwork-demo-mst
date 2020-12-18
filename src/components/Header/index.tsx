@@ -12,21 +12,18 @@ const HeaderWrapper = styled(Row)`
 	background-color: #389e0d;
 `;
 
-const Header = () => {
-
-	return (
-		<HeaderWrapper align='middle'>
-			<Col span={3}>
-				<HeaderButton icon={<ArrowLeftOutlined />} text='BACK' style={{ marginLeft: '30px' }} />
-			</Col>
-			<Col span={15}>
-				<HeaderText />
-			</Col>
-			<Col span={6}>
-				<OperationSet />
-			</Col>
-		</HeaderWrapper>
-	);
-};
+const Header = (): JSX.Element => (
+	<HeaderWrapper align='middle'>
+		<Col span={3}>
+			<HeaderButton icon={<ArrowLeftOutlined />} text='BACK' style={{ marginLeft: '30px' }} />
+		</Col>
+		<Col span={15}>
+			<HeaderText />
+		</Col>
+		<Col span={6}>
+			<OperationSet />
+		</Col>
+	</HeaderWrapper>
+);
 
 export default Header;

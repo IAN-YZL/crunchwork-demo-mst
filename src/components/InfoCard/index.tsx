@@ -32,7 +32,7 @@ const CardWrapper = styled.div`
 	border: 1px solid #ececec;
 `;
 
-const CardHeader = (props: CardHeaderProps) => {
+const CardHeader = (props: CardHeaderProps): JSX.Element => {
 	const { title, handleClick, visible } = props;
 	return (
 		<HeaderWrapper>
@@ -45,7 +45,7 @@ const CardHeader = (props: CardHeaderProps) => {
 };
 
 
-const InfoCard = (props: InfoCardProps) => {
+const InfoCard = (props: InfoCardProps): JSX.Element => {
 	const [visible, setVisible] = useState(true);
 	const handleClick = () => {
 		setVisible(!visible);

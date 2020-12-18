@@ -22,16 +22,13 @@ const TextWrapper = styled.div`
 	}
 `;
 
-const HeaderText = () => {
+const HeaderText = (): JSX.Element => (
+	<TextWrapper>
+		<p>NRO09328412</p>
+		<Divider />
+		<p>Completed</p>
+	</TextWrapper>
 
-	return (
-		<TextWrapper>
-			<p>NRO09328412</p>
-			<Divider />
-			<p>Completed</p>
-		</TextWrapper>
-
-	);
-};
+);
 
 export default HeaderText;

@@ -10,14 +10,11 @@ const LayoutWrapper = styled.div`
 	overflow: hidden;
 `;
 
-const Layout = () => {
-
-	return (
-		<LayoutWrapper>
-			<Header />
-			<Body />
-		</LayoutWrapper>
-	);
-};
+const Layout = (): JSX.Element => (
+	<LayoutWrapper>
+		<Header />
+		<Body />
+	</LayoutWrapper>
+);
 
 export default Layout;

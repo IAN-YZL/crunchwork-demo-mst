@@ -8,15 +8,12 @@ const SetWrapper = styled.div`
 	line-height: 40px;
 `;
 
-const OperationSet = () => {
-
-	return (
-		<SetWrapper>
-			<HeaderButton icon={<FormOutlined />} text='ADD NOTE' />
-			<HeaderButton icon={<PlusCircleOutlined />} text='CREATE' />
-			<HeaderButton icon={<SaveOutlined />} text='SAVE' />
-		</SetWrapper>
-	);
-};
+const OperationSet = (): JSX.Element => (
+	<SetWrapper>
+		<HeaderButton icon={<FormOutlined />} text='ADD NOTE' />
+		<HeaderButton icon={<PlusCircleOutlined />} text='CREATE' />
+		<HeaderButton icon={<SaveOutlined />} text='SAVE' />
+	</SetWrapper>
+);
 
 export default OperationSet;

@@ -16,7 +16,7 @@ const ContactWrapper = styled.div`
 	}
 `;
 
-const ContactBody = () => {
+const ContactBody = (): JSX.Element => {
 	const [contacts, setContacts] = useState([
 		{
 			id: 1,
@@ -60,7 +60,7 @@ const ContactBody = () => {
 		},
 	])
 
-	const handleDelete = (id: number) => {
+	const handleDelete = (id: number): void => {
 		const newContacts = remove(contacts, (item) => {
 			return item.id !== id;
 		});
